@@ -1,0 +1,22 @@
+<html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<center>
+	<div id="valVid">
+		<video id="video" width="640" autoplay src="media/YourVideo.mp4" onclick="pauseOrPlay()" lecteur=0></video>
+		<div id="controle">
+		<button id="pausePlay" onclick="pauseOrPlay()"></button> <input id="range" onchange="changeTime(this.value)" value=0 type="range" name="temps" min="0" max="10"><div id="pop"></div>
+		 <button id="mute">mute</button>
+		  <input id="vol" onchange="changeVol(this.value)"  value=3 type="range" name="temps" min="0" max="5">
+		<div>
+	</div>
+</center>
+
+
+<script src="script/script.js"></script>
+</html>
